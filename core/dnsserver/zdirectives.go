@@ -53,4 +53,6 @@ var Directives = []string{
 	"whoami",
 	"on",
 	"sign",
+	"proxy",
+	"block",
 }
