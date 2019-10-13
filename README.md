@@ -1,3 +1,23 @@
+IMPORTANT:
+===
+I fork this repo for local DNS server usage. You can just use one command to run a local dns server on your laptop, like this:
+
+````bash
+$ git clone https://github.com/liujianping/coredns
+$ cd coredns
+$: docker build -t coredns:latest .
+$: docker run -d -p 127.0.0.1:53:53/udp coredns:latest
+
+# check
+$: dig www.google.com @127.0.0.1
+````
+
+For more information, please visit my blog post:
+
+- [制作一键安装的本地无污染 DNS 域名服务](https://gitdig.com/local-dns-server).
+
+Enjoy it~
+
 [![CoreDNS](https://coredns.io/images/CoreDNS_Colour_Horizontal.png)](https://coredns.io)
 
 [![Documentation](https://img.shields.io/badge/godoc-reference-blue.svg)](https://godoc.org/github.com/coredns/coredns)
